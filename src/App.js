@@ -1,21 +1,21 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import MovieCard from "./MovieCard";
-import { useState, useEffect } from "react";
 
 import './App.css';
 import SearchIcon from './search.svg';
 
 //http://www.omdbapi.com/?i=tt3896198&apikey=16e61d2d
 
-const API_URL = "http://www.omdbapi.com/?apikey=16e61d2d";
+const API_URL = "https://www.omdbapi.com/?i=tt3896198&apikey=16e61d2d";
 
-const movie1 = {    
-    "Title": "Spiderman the Verse",
-    "Year": "2019",
-    "imdbID": "tt12122034",
-    "Type": "series",
-    "Poster": "https://m.media-amazon.com/images/M/MV5BNDBjNWY3OWYtMjk2ZS00NjA2LWE0NzAtOWQxNzBhNjZlMGYyXkEyXkFqcGc@._V1_SX300.jpg"
-}
+// Example movie object
+// const movie1 = {    
+//     "Title": "Spiderman the Verse",
+//     "Year": "2019",
+//     "imdbID": "tt12122034",
+//     "Type": "series",
+//     "Poster": "https://m.media-amazon.com/images/M/MV5BNDBjNWY3OWYtMjk2ZS00NjA2LWE0NzAtOWQxNzBhNjZlMGYyXkEyXkFqcGc@._V1_SX300.jpg"
+// }
 
 const App = () => {
     const [movies, setMovies] = useState([]);
@@ -30,6 +30,17 @@ const App = () => {
 
     useEffect(() => {
         searchMovies("Spiderman");
+    }, []);
+
+    useEffect(() => {
+        const handleMouseMove = (e) => {
+            const x = (e.clientX / window.innerWidth) * 100;
+            const y = (e.clientY / window.innerHeight) * 100;
+            document.body.style.setProperty('--x', `${x}%`);
+            document.body.style.setProperty('--y', `${y}%`);
+        };
+        window.addEventListener('mousemove', handleMouseMove);
+        return () => window.removeEventListener('mousemove', handleMouseMove);
     }, []);
 
     return (

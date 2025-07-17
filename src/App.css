@@ -15,6 +15,9 @@
 body {
   font-family: var(--font-roboto);
   background-color: #212426;
+  /* animated gradient background */
+  background: radial-gradient(circle at var(--x, 50%) var(--y, 50%), #343739 0%, #212426 100%);
+  transition: background 0.2s;
 }
 
 .app {
