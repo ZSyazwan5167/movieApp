@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/ZSyazwan5167/movieApp.git/static/css/main.bf3b5ea4.css",
+    "main.js": "/ZSyazwan5167/movieApp.git/static/js/main.7964dafd.js",
+    "index.html": "/ZSyazwan5167/movieApp.git/index.html",
+    "static/media/search.svg": "/ZSyazwan5167/movieApp.git/static/media/search.db964b809d21320fb503cb05f4dc8a09.svg",
+    "main.bf3b5ea4.css.map": "/ZSyazwan5167/movieApp.git/static/css/main.bf3b5ea4.css.map",
+    "main.7964dafd.js.map": "/ZSyazwan5167/movieApp.git/static/js/main.7964dafd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bf3b5ea4.css",
+    "static/js/main.7964dafd.js"
+  ]
+}
