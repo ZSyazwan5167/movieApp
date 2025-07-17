@@ -7,7 +7,7 @@ import SearchIcon from './search.svg';
 
 //http://www.omdbapi.com/?i=tt3896198&apikey=16e61d2d
 
-const API_URL = "http://www.omdbapi.com/?i=tt3896198&apikey=16e61d2d";
+const API_URL = "http://www.omdbapi.com/?apikey=16e61d2d";
 
 const movie1 = {    
     "Title": "Spiderman the Verse",
